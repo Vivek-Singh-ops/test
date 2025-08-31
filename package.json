@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     
-    "serve": "npm run build && npx serve build -s -l 3000",
+    
     "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
  
