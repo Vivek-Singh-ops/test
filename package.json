@@ -1,6 +1,7 @@
 {
-  "homepage": "https://vivek-singh-ops.github.io/gender_cell_login",
-  "name": "role-based-auth",
+  "homepage": "https://Vivek-Singh-ops.github.io/gender_cell",
+
+  "name": "gender_cell",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,12 +26,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    
-    
     
     "serve": "npm run build && npx serve build -s -l 3000",
-    "deploy": "npm run build && npx serve build -s"
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
  
   },
   "eslintConfig": {
