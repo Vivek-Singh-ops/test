@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Vivek-Singh-ops/genderCell.git",
+  "homepage": "https://Vivek-Singh-ops.github.io/genderCell",
   "name": "gender_cell",
   "version": "0.1.0",
   "private": true,
@@ -16,16 +16,16 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "serve": "^14.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
