@@ -5,45 +5,23 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/manifest+json; charset=utf-8"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    },
-    {
-      "source": "/favicon.ico",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    },
-    {
-      "source": "/logo(.*).png",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
+          "value": "application/json"
         }
       ]
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/manifest.json",
-      "destination": "/manifest.json"
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(manifest\\.json|favicon\\.ico|logo.*\\.png)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
